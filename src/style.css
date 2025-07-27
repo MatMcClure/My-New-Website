@@ -1,0 +1,130 @@
+.App {
+  background-color: transparent;
+}
+
+body, main {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  background: transparent;
+}
+
+h3 {
+  color: white;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  padding: 15px 30px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.left-button {
+  padding: 0px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.3s;
+  margin-top: 0%;
+}
+
+.nav-button {
+  padding: 0px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.3s;
+  margin-top: 0%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #444;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: -40%;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 18px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: cyan;;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.github-icon {
+  transform: translateY(-6px);
+}
+
+.project-details {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.project-details ul {
+  list-style-type: disc;
+  margin-left: 1.5rem; /* or 24px */
+  padding-left: 1.5rem;
+  max-width: 800px; /* prevents ultra-wide lines */
+}
+
+.project-details li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.project-image {
+  margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
