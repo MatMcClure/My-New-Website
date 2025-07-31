@@ -18,6 +18,9 @@ const Home = () => {
       <header className="nav-header">
         <div className="nav-left">
           <button className="nav-button" onClick={() => setActiveProject(null)}>Home</button>
+          <a href="https://drive.google.com/file/d/17oIeIIBpgYgajfDdtJxUfYuXh-p38_rf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button className="nav-button">Resume</button>
+          </a>
           <div className="dropdown">
             <button className="nav-button">Projects</button>
             <div className="dropdown-content">
@@ -118,17 +121,13 @@ const Home = () => {
       )}
 
       {/*Food REST API*/}
-      {activeProject === 'sparkingzero' && (
-        <section id="sparkingzero" className="project-details">
+      {activeProject === 'foodrestapi' && (
+        <section id="foodrestapi" className="project-details">
           <h2>
-            Sparking Zero{' '}
+            Food Rest API{' '}
             <a href="https://github.com/MatMcClure/Sparking-Zero-Rolling-Hammer" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>{' '}
-            |{' '}
-            <a href="https://sparkingzerotg.netlify.app/" target="_blank" rel="noopener noreferrer">
-              Website
-            </a>
           </h2>
           <p><strong>June 2025</strong></p>
             <ul>
@@ -137,7 +136,7 @@ const Home = () => {
               <li>Integrated error handling and validation to improve API readability and user experience</li>
             </ul>
           <p><strong>Tech Used:</strong> ASP.NET Core, C#</p>
-          <img src={''} alt="Sparking Zero Screenshot" className="project-image" />
+          <img src={''} alt="Food Rest API Screenshot" className="project-image" />
         </section>
       )}
       </main>
