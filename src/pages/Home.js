@@ -47,6 +47,11 @@ const Home = () => {
         <>
           <h1>Hello, my name is Matthew McClure</h1>
           <h3>and I am an aspiring Software Developer looking to begin my career</h3>
+          <img
+            src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2R1dWlyOWx6dGN6MThuZWQyaDN1ZjY3MnZleDF3MjhvdDZ3ZmtiZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTnxpQ3ghPiB2Hp6/giphy.gif"
+            alt="Coding animation"
+            className="intro-gif"
+          />
         </>
       )}
 
