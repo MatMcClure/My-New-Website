@@ -21,13 +21,17 @@ const Home = () => {
           <a href="https://drive.google.com/file/d/17oIeIIBpgYgajfDdtJxUfYuXh-p38_rf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <button className="nav-button">Resume</button>
           </a>
+          <a href="
+          @matthewmcclure001@gmail.com">
+          <button className="nav-button">Contact Me</button>
+          </a>
           <div className="dropdown">
             <button className="nav-button">Projects</button>
             <div className="dropdown-content">
               <a href="#foodmood" onClick={() => showProject('foodmood')}>Food Mood</a>
               <a href="#sparkingzero" onClick={() => showProject('sparkingzero')}>Sparking Zero</a>
               <a href="#fitnessapp" onClick={() => showProject('fitnessapp')}>Fitness App</a>
-              <a href="#foodrestapi" onClick={() => showProject('foodrestapi')}>Food Rest API</a>
+              <a href="https://github.com/MatMcClure?tab=repositories" target="_blank" rel="noopener noreferrer">More Projects Here!</a>
             </div>
           </div>
         </div>
@@ -124,28 +128,7 @@ const Home = () => {
           <img src={fitnessappImage} alt="Fitness App Screenshot" className="project-image" />
         </section>
       )}
-
-      {/*Food REST API*/}
-      {activeProject === 'foodrestapi' && (
-        <section id="foodrestapi" className="project-details">
-          <h2>
-            Food Rest API{' '}
-            <a href="https://github.com/MatMcClure/Sparking-Zero-Rolling-Hammer" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>{' '}
-          </h2>
-          <p><strong>June 2025</strong></p>
-            <ul>
-              <li>Developed a REST API for managing breakfast bookings using ASP.NET Core and CRUD operations for entries</li>
-              <li>Utilized the BuberBreakfast API so that users can create, get, update, and delete breakfast request and receive a response</li>
-              <li>Integrated error handling and validation to improve API readability and user experience</li>
-            </ul>
-          <p><strong>Tech Used:</strong> ASP.NET Core, C#</p>
-          <img src={''} alt="Food Rest API Screenshot" className="project-image" />
-        </section>
-      )}
       </main>
-
     </>
   );
 };
